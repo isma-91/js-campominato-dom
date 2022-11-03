@@ -37,15 +37,12 @@ eleBtnPlay.addEventListener("click", function () {
       this.classList.toggle("select");
       if (arrBombs.includes(i)) {
         eleSquare.classList.add("bomb");
-        for (let i = 0; i < arrBombs.length; i++) {
-          // arrBombs[i].classList.add('bomb');
-          // const eleBombs = arrBombs[i];
-          // eleBombs.classList.add("bomb");
-          // console.log(eleBombs);
-          // let eleBombs = document.createElement("div");
-          // eleBombs = arrBombs[i];
-          // eleBombs.classList.add("bomb");
-          // eleGrid.append(eleBombs);
+        const squares = document.querySelectorAll(".square");
+        console.log(squares);
+        for (let i = 0; i < squares.length; i++) {
+          if (arrBombs.includes(i + 1)) {
+            squares[i].classList.add("bomb");
+          }
         }
       } else {
         eleSquare.classList.add("normal");
