@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campo Minato</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-name">
+        <img src="img/logo.jpg" alt="" />
+        <h1>Campo Minato</h1>
+      </div>
+      <div class="diff-select">
+        <label for="diff">Scegli la difficoltà:</label>
+        <select name="diff" id="diff">
+          <option value="100">Easy</option>
+          <option value="81">Normal</option>
+          <option value="49">Hard</option>
+        </select>
+        <button class="btn-play">Play</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="intro">
+          <h2>Benvenuto in Campo Minato</h2>
+          <h3>
+            Seleziona una difficoltà e premi "Play" per iniziare a giocare
+          </h3>
+        </div>
+
+        <div class="grid hidden"></div>
+      </div>
+    </main>
+  </body>
+</html>

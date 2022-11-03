@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: gold;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 30px;
+  background-color: white;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+header img {
+  height: 100px;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+main {
+  height: 90vh;
+}
+
+select {
+  width: 100px;
+  text-align: center;
+}
+
+.btn-play {
+  padding: 5px 30px;
+  margin-left: 15px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.intro {
+  margin: auto;
+  text-align: center;
+}
+
+.grid {
+  --dimSquare: 5;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 900px;
+  aspect-ratio: 1/1;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  width: calc(100% / var(--dimSquare));
+  aspect-ratio: 1/1;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+
+/* .square.easy {
+  width: calc(100% / 10);
+}
+
+.square.normal {
+  width: calc(100% / 9);
+}
+
+.square.hard {
+  width: calc(100% / 7);
+} */
+
+.square.select {
+  background-color: salmon;
+}
+.square.select.red {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
