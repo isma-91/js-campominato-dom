@@ -97,10 +97,10 @@ select {
   width: calc(100% / 7);
 } */
 
-.square.select {
+.square.select.normal {
   background-color: salmon;
 }
-.square.select.red {
+.square.select.bomb {
   background-color: red;
 }
 

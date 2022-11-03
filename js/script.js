@@ -9,6 +9,7 @@ function getRandomInteger(min, max) {
 }
 
 eleBtnPlay.addEventListener("click", function () {
+  arrBombs = [];
   eleGrid.innerHTML = "";
   eleGrid.classList.remove("hidden");
   eleIntro.classList.add("hidden");
@@ -25,18 +26,23 @@ eleBtnPlay.addEventListener("click", function () {
     arrBombs.push(randomNumber);
   }
 
-  console.log(arrBombs);
-
   for (let i = 1; i <= nCells; i++) {
     const eleSquare = document.createElement("div");
-    eleSquare.innerHTML += [i];
+    eleSquare.innerHTML += i;
     eleSquare.classList.add("square");
     eleGrid.append(eleSquare);
 
     eleSquare.addEventListener("click", function () {
       this.classList.toggle("select");
+      if (arrBombs.includes(i)) {
+        eleSquare.classList.add("bomb");
+      } else {
+        eleSquare.classList.add("normal");
+      }
     });
   }
+
+  console.log(arrBombs);
 });
 
 // for (let i = 1; i <= 100; i++) {
